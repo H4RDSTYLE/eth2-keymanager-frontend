@@ -67,6 +67,7 @@ export default function ImportScreen() {
   };
 
   // FILE CARDS
+  /* eslint-disable */
   const files = acceptedFiles
     ? Array.from(acceptedFiles).map((fileInfo, index) => (
         <Card
@@ -108,7 +109,7 @@ export default function ImportScreen() {
         </Card>
       ))
     : [];
-
+  //eslint-disable
   // SLASHING PROTECTION SWITCH
   const [slashingProtectionIncluded, setSlashingProtectionIncluded] =
     useState(true);

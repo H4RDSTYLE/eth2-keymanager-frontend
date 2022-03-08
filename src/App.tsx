@@ -27,20 +27,17 @@ function toolbar(): JSX.Element {
   return (
     <Toolbar>
       <table>
-        <tr>
-          <th><img  src={logo} style={{height: "100%", float: "left", margin: "5px"}} alt="fireSpot"/></th>
-          <th><Typography
-        variant="h1"
-        noWrap
-        component="div"
-        sx={{ flexGrow: 1, fontWeight: "bold" }}
-      >
-        Dappnode's ETH2 Key Manager
-      </Typography></th>
-        </tr>
+        <tbody>
+          <tr>
+            <th>
+              <img  src={logo} style={{float: "left", margin: "5px"}} alt="fireSpot"/>
+            </th>
+            <th>
+              <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, fontWeight: "bold" }}>Dappnode's ETH2 Key Manager</Typography>
+            </th>
+          </tr>
+        </tbody>
       </table>
-      
-      
     </Toolbar>
   );
 }
