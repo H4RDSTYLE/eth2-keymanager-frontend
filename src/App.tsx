@@ -1,3 +1,4 @@
+import logo from "../images/dappnode_logo";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -24,7 +25,7 @@ const darkTheme = createTheme({
 function toolbar(): JSX.Element {
   return (
     <Toolbar>
-      <img  src={require(./images/dappnode_logo)} style={nbStyle.logo} alt="fireSpot"/>
+      <img  src={logo} />
       <Typography
         variant="h6"
         noWrap
