@@ -1,4 +1,4 @@
-import logo from "../images/dappnode_logo";
+import logo from "./images/dappnode_logo.png";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
