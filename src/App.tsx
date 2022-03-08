@@ -24,13 +24,14 @@ const darkTheme = createTheme({
 function toolbar(): JSX.Element {
   return (
     <Toolbar>
+      <img  src={require(./images/dappnode_logo)} style={nbStyle.logo} alt="fireSpot"/>
       <Typography
         variant="h6"
         noWrap
         component="div"
         sx={{ flexGrow: 1, fontWeight: "bold" }}
       >
-        ETH2 Key Manager
+        Dappnode's ETH2 Key Manager
       </Typography>
     </Toolbar>
   );
