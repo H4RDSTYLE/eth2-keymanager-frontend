@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ImportScreen from "./ImportScreen";
 import ListScreen from "./ListScreen";
 
+
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -25,15 +26,21 @@ const darkTheme = createTheme({
 function toolbar(): JSX.Element {
   return (
     <Toolbar>
-      <img  src={logo} />
-      <Typography
-        variant="h6"
+      <table>
+        <tr>
+          <th><img  src={logo} style={{height: "100%", float: "left", margin: "5px"}} alt="fireSpot"/></th>
+          <th><Typography
+        variant="h1"
         noWrap
         component="div"
         sx={{ flexGrow: 1, fontWeight: "bold" }}
       >
         Dappnode's ETH2 Key Manager
-      </Typography>
+      </Typography></th>
+        </tr>
+      </table>
+      
+      
     </Toolbar>
   );
 }
