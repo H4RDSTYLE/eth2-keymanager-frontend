@@ -1,7 +1,6 @@
-import logo from "./images/dappnode_logo.png";
+import logo from "./images/dappnodeWhiteLogo.png";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import "./App.css";
 import { Container } from "@mui/material";
@@ -22,22 +21,10 @@ const darkTheme = createTheme({
     },
   },
 });
-
 function toolbar(): JSX.Element {
   return (
     <Toolbar>
-      <table>
-        <tbody>
-          <tr>
-            <th>
-              <img  src={logo} style={{float: "left", margin: "5px"}} alt="fireSpot"/>
-            </th>
-            <th>
-              <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, fontWeight: "bold" }}>Dappnode's ETH2 Key Manager</Typography>
-            </th>
-          </tr>
-        </tbody>
-      </table>
+      <img  src={logo} style={{float: "left", margin: "5px", maxWidth: "150px"}} alt="fireSpot"/>
     </Toolbar>
   );
 }
@@ -48,8 +35,8 @@ function App() {
       <AppBar position="static" color="primary">
         {toolbar()}
       </AppBar>
-      <Container component="main" maxWidth="lg">
-        <BrowserRouter>
+      <Container component="main">
+        <BrowserRouter >
           <Routes>
             <Route path="/" element={<ListScreen />} />
             <Route path="import" element={<ImportScreen />} />

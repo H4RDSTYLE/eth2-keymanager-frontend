@@ -172,13 +172,15 @@ export default function ListScreen() {
     </Dialog>
   );
   return (
-    <div>
+    <div style={{margin: "0px", marginTop: "40px", marginBottom: "40px"}} >
       <Box
         sx={{
-          margin: 8,
+          margin: 0,
           display: "flex",
           flexDirection: "column",
           alignItems: "left",
+          width: "100%",
+          height: "100%"
         }}
       >
         <Card sx={{ padding: 4 }}>
